@@ -1,0 +1,82 @@
+<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 navbar" id="nav">
+    <h5 class="my-0 mr-md-auto font-weight-normal"><img src="../../../assets/img/electrobits-logotipo.png" width="180px" alt="electrobits-respuestos y componentes-electrónica-BIOBIO"></h5>
+    <nav class="nav my-2 my-md-0 mr-md-3 justify-content-center" id="myDIV">
+      <a class="p-2 menu-item active" href="#begins">inicio</a>
+      <a class="p-2  menu-item ml-2" href="#one">nosotros</a>
+      <a class="p-2 menu-item ml-2" href="#two">productos</a>
+      
+    </nav>
+    <a class="btn rounded btn-ir p-1 pr-3 pl-3 m-0 font-weight-bold text-white parrafo mt-2 d-none d-md-none d-lg-block"  href="#three">Contacto</a>
+</div>
+
+<!--menu fixed-->
+<script type="text/javascript">
+   	
+    var  nav = document.getElementById('nav');
+  
+  window.onscroll = function(){
+
+      if (window.pageYOffset >100) {
+
+          nav.style.background = "#201c1d";
+          nav.style.boxShadow = "0px 4px 2px #201c1d";
+      }
+      else{
+          nav.style.background = "transparent";
+          nav.style.boxShadow = "none";
+      }
+  }
+</script>
+
+<!--active-->
+<script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+<script>
+var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("menu-item");
+for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+    });
+}
+</script>
+
+<!--transition-->
+<script>
+    $(function() {
+      // Smooth Scrolling
+      $('a[href*="#"]:not([href="#"])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+</script>
+
+<script> 
+    $(document).ready(function(){
+    
+       $('.ir-arriba').click(function(){
+           $('body, html').animate({
+               scrollTop: '0px'
+           }, 300);
+       });
+    
+       $(window).scroll(function(){
+           if( $(this).scrollTop() > 0 ){
+               $('.ir-arriba').slideDown(300);
+           } else {
+               $('.ir-arriba').slideUp(300);
+           }
+       });
+    
+   });
+</script>

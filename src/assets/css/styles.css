@@ -1,0 +1,164 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #F3F3F3;
+}
+
+.navbar{
+    width: 100%;
+    padding: 20px;
+    position: fixed;
+    top: 0px;
+    text-align: center;
+    transition: .5s;
+    z-index: 1;
+}
+
+
+.menu-item {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    font-family: 'Source Code Pro', monospace;
+    letter-spacing: 1px;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 100 !Important;
+    transition: 1s;
+  }
+
+.active, .menu-item:hover {
+    color: #fff;
+    text-decoration: none;
+    transition: 1s;
+    font-weight: 100 !Important;
+    font-family: 'Source Code Pro', monospace;
+    border-bottom: 5px solid #FF3527;
+  }
+
+.back{
+    background: #201C1D;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    height: 680px;
+    width: 100%;
+}
+
+
+.bg-boy{
+    background-repeat: no-repeat;
+    background-size: cover;
+     background-position: center;
+    height: 850px;
+    width: 100%;
+}
+
+.bg-content{
+    background: #262130;
+}
+
+.bg-content-2{
+    background: #F3F3F3;
+}
+
+
+.bg-content-3{
+    background: #00baa3;
+}
+
+.title-circuit h1{
+    font-family: 'Source Code Pro', monospace;
+    letter-spacing: 1px;
+    font-weight: 900;
+    font-size: 60px !Important; 
+}
+
+.title-mobile h5{
+    font-family: 'Source Code Pro', monospace;
+    letter-spacing: 1px;
+    font-weight: 900;
+    font-size: 30px !Important; 
+}
+
+.title-content{
+    font-family: 'Source Code Pro', monospace;
+    letter-spacing: 1px;
+    font-weight: 900;
+    color: #201C1D;
+}
+
+.parrafo{
+    font-family: 'Source Code Pro', monospace;
+    letter-spacing: 1px;
+    color: #201C1D;
+    font-weight: 500;
+
+}
+
+.text-card{
+    font-family: 'Source Code Pro', monospace;
+    letter-spacing: 1px;
+    color: #201C1D;
+    font-weight: 500;
+}
+
+ .body-section{
+    background: #eef1f8;
+    height: 100vh !Important;
+}
+
+.bg-precio{
+    background: #5399A1;
+    border: 1px solid #fff;
+}
+
+
+.border-section{
+    border-left: 140px solid #FF3527;
+}
+button{
+    outline:none !Important;
+}
+
+.ir-arriba {
+    display: none;
+    padding: 10px 17px 10px 17px;
+    background: #FF3527;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1;
+}
+
+.dot {
+    height: 13px;
+    width: 13px;
+    background-color: #10bba5;
+    border-radius: 100%;
+    display: inline-block;
+  }
+
+.card{
+      background: #e6e9f9;
+  }
+
+  .btn-ir{
+    background: #FF3527;
+    color: #fff;
+    text-decoration: none;
+    transition: 1s;
+    border-radius: 6px;
+}
+
+@media screen and (max-width: 768px){
+   .border-section{
+       border-top: 18px solid red;
+       border-left: none; 
+   }
+}
+
+
